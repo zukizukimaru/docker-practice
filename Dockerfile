@@ -6,12 +6,13 @@ RUN mkdir /var/opt/mydir
 
 RUN ls /var/opt/
 
-RUN date > /var/opt/mydir/time
-
-RUN cat /var/opt/mydir/time
+RUN echo "Hello World" > /var/opt/mydir/hello-world
 
 RUN ls /var/opt/mydir
 
-CMD echo Hello world!
+RUN cat /var/opt/mydir/hello-world
+
+CMD echo Hello World 5th
+
 
 
