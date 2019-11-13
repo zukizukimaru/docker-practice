@@ -12,7 +12,17 @@ RUN ls /var/opt/mydir
 
 RUN cat /var/opt/mydir/hello-world
 
-CMD echo Hello World 5th
+RUN mkdir /var/opt/yourdir
 
+RUN ls /var/opt/
+
+RUN cp var/opt/mydir/hello-world /var/opt/yourdir 
+
+RUN ls /var/opt/yourdir
+
+RUN cat /var/opt/yourdir/hello-world
+
+
+CMD echo Hello World 5th
 
 
